@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/statesListFragment">
+
+    <fragment
+        android:id="@+id/statesListFragment"
+        android:name="com.example.statesofnigeria.ui.StatesListFragment"
+        android:label="fragment_states_list"
+        tools:layout="@layout/fragment_states_list" >
+        <action
+            android:id="@+id/action_statesListFragment_to_stateDetailFragment"
+            app:destination="@id/stateDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stateDetailFragment"
+        android:name="com.example.statesofnigeria.ui.StateDetailFragment"
+        android:label="fragment_state_detail"
+        tools:layout="@layout/fragment_state_detail" />
+</navigation>

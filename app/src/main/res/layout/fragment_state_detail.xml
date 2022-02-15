@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StateDetailFragment">
+
+    <TextView
+        android:id="@+id/state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Abia State" />
+
+    <TextView
+        android:id="@+id/capital_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/state_title"
+        app:layout_constraintTop_toBottomOf="@+id/state_title"
+        tools:text="Capital: Abia" />
+
+    <TextView
+        android:id="@+id/state_alias_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        tools:text="Alias: Unity is Good"
+        app:layout_constraintStart_toStartOf="@id/capital_textView"
+        app:layout_constraintTop_toBottomOf="@id/capital_textView"/>
+
+    <TextView
+        android:id="@+id/governor_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/state_alias_textView"
+        app:layout_constraintTop_toBottomOf="@+id/state_alias_textView"
+        tools:text="Governor: John Doe" />
+
+    <TextView
+        android:id="@+id/population_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/governor_textView"
+        app:layout_constraintTop_toBottomOf="@+id/governor_textView"
+        tools:text="Population: 2,000,0000" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

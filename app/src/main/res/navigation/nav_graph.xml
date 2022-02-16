@@ -18,5 +18,9 @@
         android:id="@+id/stateDetailFragment"
         android:name="com.example.statesofnigeria.ui.StateDetailFragment"
         android:label="fragment_state_detail"
-        tools:layout="@layout/fragment_state_detail" />
+        tools:layout="@layout/fragment_state_detail" >
+        <argument
+            android:name="state"
+            app:argType="com.example.statesofnigeria.model.State" />
+    </fragment>
 </navigation>

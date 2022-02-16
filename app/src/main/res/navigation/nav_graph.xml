@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/statesListFragment"
         android:name="com.example.statesofnigeria.ui.StatesListFragment"
-        android:label="fragment_states_list"
-        tools:layout="@layout/fragment_states_list" >
+        android:label="Home"
+        tools:layout="@layout/fragment_states_list">
         <action
             android:id="@+id/action_statesListFragment_to_stateDetailFragment"
             app:destination="@id/stateDetailFragment" />
@@ -17,8 +17,8 @@
     <fragment
         android:id="@+id/stateDetailFragment"
         android:name="com.example.statesofnigeria.ui.StateDetailFragment"
-        android:label="fragment_state_detail"
-        tools:layout="@layout/fragment_state_detail" >
+        android:label="State Details"
+        tools:layout="@layout/fragment_state_detail">
         <argument
             android:name="state"
             app:argType="com.example.statesofnigeria.model.State" />
